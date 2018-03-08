@@ -30,7 +30,7 @@ class biograf {
 
     static FindFilm(liste = [], search = "") {
         liste.forEach(biograf => {
-            if (biograf.FilmNavn.toLowerCase().indexOf(search.toLowerCase()) > -1) {
+            if (biograf.Premiere.toLowerCase().indexOf(search.toLowerCase()) > -1) {
             console.log(biograf.Profil());
             }
         });
@@ -39,4 +39,4 @@ class biograf {
 
 let filmliste = biograf.HentFilmliste();
 
-biograf.FindFilm(filmliste, "");
+biograf.FindFilm(filmliste, "Apr");
